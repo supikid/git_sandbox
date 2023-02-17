@@ -15,6 +15,15 @@ class SampleLib
     }
 
     /**
+     * 本日の日付(Ymd)を取得する
+     */
+    public function getTodayDateNum()
+    {
+        $dt = Carbon::today();
+        return $dt->format('Ymd');
+    }
+
+    /**
      * 曜日を取得する
      */
     public function getDayOfWeekStr($dt)
